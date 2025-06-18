@@ -71,7 +71,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 	}
 
 	LocalFree(argv); // CommandLineToArgv 계열은 메모리 할당; 해제 필요
-	string endpoint = baseUrl + encodeURL(query);
+	string endpoint = "--incognito " + baseUrl + encodeURL(query);
 
 	// Chrome 기준
 	ShellExecute(NULL, "open", "brave.exe", endpoint.c_str(), NULL, SW_SHOWNORMAL);
