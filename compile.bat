@@ -13,7 +13,7 @@ echo --- C 파일 컴파일 중 ---
 for %%f in ("%SCRIPT_DIR%\*.c") do (
     if exist "%%f" (
         echo Compiling C file: "%%~nxf"
-        gcc "%%f" -o "%OUTPUT_DIR%\%%~nf.exe"
+        gcc "%%f" -o "%OUTPUT_DIR%\%%~nf.exe" -mwindows -lshell32
         if errorlevel 1 (
             echo ❌ERROR: Failed to compile "%%~nxf"
         ) else (
@@ -28,7 +28,7 @@ echo --- C++ 파일 컴파일 중 ---
 for %%f in ("%SCRIPT_DIR%\*.cpp") do (
     if exist "%%f" (
         echo Compiling C++ file: "%%~nxf"
-        g++ "%%f" -o "%OUTPUT_DIR%\%%~nf.exe"
+        g++ "%%f" -o "%OUTPUT_DIR%\%%~nf.exe" -mwindows -lshell32
         if errorlevel 1 (
             echo ❌ERROR: Failed to compile "%%~nxf"
         ) else (
