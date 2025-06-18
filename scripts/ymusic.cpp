@@ -74,7 +74,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR lpCmdLine, in
 	string endpoint = baseUrl + encodeURL(query);
 
 	// Chrome 기준
-	ShellExecute(NULL, "open", "chrome.exe", endpoint.c_str(), NULL, SW_SHOWNORMAL);
+	ShellExecute(NULL, "open", "brave.exe", endpoint.c_str(), NULL, SW_SHOWNORMAL);
 
 	return 0;
 }
