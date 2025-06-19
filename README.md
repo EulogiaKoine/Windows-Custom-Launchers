@@ -13,4 +13,5 @@ google (검색어)
 kakao
 obsidian
 vscode
+ymusic
 ```
