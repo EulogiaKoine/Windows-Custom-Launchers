@@ -8,10 +8,11 @@
 5. Brave Browser
 
 ```cmd
-gemini
+wgemini
 google (검색어)
 kakao
 obsidian
 vscode
 ymusic
+capture
 ```
